@@ -1,0 +1,564 @@
+/* 542 Lines */
+
+/* start main rules */
+
+:root {
+    --font-color: rgb(32, 32, 32);
+    --orange: rgb(255, 166, 0);
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+th,h2,a,p,h3,span {
+    color: var(--font-color);
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* end main rules */
+
+/* start Home */
+
+table {
+    text-align: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 1000px;
+}
+
+table td,
+table th {
+    padding: 10px;
+}
+
+tr:hover{background-color:orange;}
+
+table th {
+    background-color: var(--orange);
+}
+
+.home-content {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.home-content span {
+    color: var(--orange);
+}
+
+/* end Home */
+
+/* start about us */
+
+/* start header */
+
+header .slider {
+    background-color: #eee;
+    height: 650px;
+    background-image: url("../images/5\ On\ Trend\ Home\ Color\ Ideas\ for\ Interior\ and\ Exterior\ Design\ -\ Melanie\ Jade\ Design.jpeg");
+    background-size: cover;
+    background-position: 0;
+}
+
+header .navbar {
+    background-color: #e8e8e8;
+    color: var(--font-color);
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+header .navbar h2 {
+    position: relative;
+    width: 200px;
+}
+
+header .navbar h2 span {
+    color: var(--orange, orange);
+    position: absolute;
+    left: 40px;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin-right: 25px;
+}
+
+
+header .navbar .pages li {
+    padding: 0;
+}
+
+header .navbar .pages li a {
+    display: inline-block;
+    border: none;
+    background-color: var(--orange);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+header .navbar .lists::after {
+    content: "";
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+}
+
+header .navbar ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+header .navbar ul li a {
+    color: var(--font-color);
+    text-decoration: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+header .navbar ul li.active a,
+header .navbar .lists li a:hover {
+    color: var(--orange);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    cursor: pointer;
+}
+
+/* end header */
+
+/* start identification */
+
+.identification {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.identification .feat {
+    width: 100%;
+    height: 200px;
+}
+
+.identification .feat h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* end identification */
+
+/* start goals */
+
+.goals {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+    
+}
+
+.goals .main {
+    width: 100%;
+}
+
+.goals .main h2 {
+    text-align: center;
+}
+
+.goals .main p {
+    margin: 0 0 10px 40px;
+}
+
+.goals .main1 {
+    width: 50%;
+}
+
+.goals .main1,
+.goals .main2,
+.goals .main3,
+.goals .main4,
+.goals .main5 {
+    width: 45%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.goals .container div h3 {
+    position: relative;
+    margin-right: 40px;
+}
+
+.goals .container div h3 span {
+    text-align: center;
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: -50px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 5px;
+}
+
+.goals .main p:last-of-type {
+    margin-top: 5px;
+}
+
+.goals .exp {
+    width: 45%;
+}
+
+.goals .exp h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.goals .exp span {
+    display: block;
+    margin-bottom: 10px;
+}
+.goals .exp span:last-of-type {
+    background-color: var(--orange);
+    width: fit-content;
+    padding: 5px;
+}
+
+/* end goals */
+
+/* start message */
+
+.Message {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.Message .feat {
+    width: 100%;
+    height: 200px;
+}
+
+.Message .feat h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Message .feat p {
+    text-align: center;
+}
+
+/* end message */
+
+/* start services */
+
+.services {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+}
+
+.services .main {
+    width: 100%;
+}
+
+.services .main h2 {
+    text-align: center;
+}
+
+.services .main p {
+    margin: 0 0 10px 40px;
+}
+
+.services .main1 {
+    width: 50%;
+}
+
+.services .main1,
+.services .main2,
+.services .main3,
+.services .main4,
+.services .main5 {
+    width: 45%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.services .container div h3 {
+    position: relative;
+    margin-right: 40px;
+}
+
+.services .container div h3 span {
+    text-align: center;
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: -50px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 5px;
+}
+
+.services .main p:last-of-type {
+    margin-top: 5px;
+}
+
+.services .exp {
+    width: 45%;
+}
+
+.services .exp h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.services .exp span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.services .exp span:last-of-type {
+    background-color: var(--orange);
+    width: fit-content;
+    padding: 5px;
+}
+
+/* end my education */
+
+/* start contact me */
+
+.contact {
+    overflow: hidden;
+    background-color: #c7c7c7;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.contact h2 {
+    margin-left: 40px;
+}
+
+.contact .info-company {
+    margin-right: 5%;
+    width: 50%;
+}
+
+.contact p {
+    margin-left: 40px;
+}
+
+.contact .form {
+    width: 45%;
+}
+
+.contact .form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact .form input[type="text"] {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.contact .form textarea {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.contact .form input[type="submit"] {
+    border: none;
+    background-color: #191e22;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* end contact me */
+
+/* start footer */
+
+.footer {
+    background-color: var(--orange);
+    color: var(--font-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+/* end footer */
+
+/* end about us */
+
+/* start Properties */
+
+/* start content */
+
+.Properties-content .container{  
+    width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.Properties-content button {
+    background-color: transparent;
+    border: none;
+}
+
+.Properties-content button a {
+    padding: 10px;
+    background-color: var(--orange);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* end content */
+
+/* start info */
+
+.info {
+    overflow: hidden;
+    background-color: #c7c7c7;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.info h2 {
+    margin-left: 40px;
+}
+
+.info .info-company {
+    width: 100%;
+    text-align: center;
+}
+
+.info p {
+    margin-left: 40px;
+}
+
+.info form {
+    width: 100%;
+}
+
+.info form label {
+    display: block;
+    color: var(--font-color);
+    margin: 10px 0;
+}
+
+.info form input {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info form input[type="email"] {
+    display: block;
+}
+
+.info form input[type="reset"] {
+    background-color: #e8e8e8;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: black;
+    display: block;
+}
+
+.info form input[type="submit"] {
+    background-color: #191e22;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    margin: 20px auto;
+}
+
+#MyButton {
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+/* end info */
+
+/* end Properties */
+
+/* start my framework */
+
+.fl-left {
+    float: left
+}
+
+.tr-none {
+    display: none;
+}
+
+/* end my framework */

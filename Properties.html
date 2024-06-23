@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+    src="js\jquery-3.7.1.min.js"> </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+    $('#info').hide();
+    $('#MyButton').click(function(){
+  $('#info').toggle();
+  
+});
+});
+
+    </script>
+</head>
+
+<body onload="createCaptcha()" id="Req_loan">
+
+    <!-- start header -->
+
+    <header>
+        <div class="slider"></div>
+        <div class="navbar">
+            <div class="container">
+                <h2 class="fl-left">حدود جيديدة<span>للعيش</span></h2>
+                <ul class="pages">
+                    <li><a href="about-us.html">من نحن</a></li>
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- end header -->
+
+    <section class="Properties-content">
+        <div class="container">
+            <table border="1">
+                <tr>
+                    <th>#</th>
+                    <th>المدينة</th>
+                    <th>التفاصيل</th>
+                    <th>الاجار الشهري</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختار</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>دمشق</td>
+                    <td> شقة </td>
+                    <td> ل.س500000</td>
+                    <td> <input type="checkbox"  id="My1" onclick="dma1()"><a href="#tr1"></a></td>
+                    <td> <input type="radio" name="radio"></td>
+                </tr>
+
+                <tr class="tr-none" id="tr1">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة : المزة</p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 100م</p>
+                                <p>متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق اول</p>
+                                <p>لايوجد بلكون مفروشة</p>
+                                <img src="images/غرناطة.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>حمص</td>
+                    <td>شقة </td>
+                    <td> ل.س350000</td>
+                    <td><input type="checkbox" id="MY2" onclick="hom2()"><a href="#tr2"></a>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr2">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة : الفردوس</p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 110م</p>
+                                <p>متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق ثالث</p>
+                                <p>يوجد بلكون مفروشة</p>
+                                <img src="images/المزةض.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>حلب</td>
+                    <td>شقة</td>
+                    <td> ل.س250000</td>
+                    <td><input type="checkbox" id="MY3" onclick="ha3()"><a href="#tr3"></a> </td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr3">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة : الاشرفية</p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 90م</p>
+                                <p>غير متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق ثاني </p>
+                                <p>يوجد بلكون مفروشة</p>
+                                <img src="images/الفردوسض.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>دمشق</td>
+                    <td>شقة</td>
+                    <td> ل.س350000</td>
+                    <td><input type="checkbox" id="MY4" onclick="dm4()"><a href="#tr4"></a> </td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr4">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة :  المالكي </p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 140م</p>
+                                <p>غير متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق رابع </p>
+                                <p> لا يوجد بلكون مفروشة </p>
+                                <img src="images/يبرودض.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>حماه</td>
+                    <td>شقة</td>
+                    <td> ل.س350000</td>
+                    <td><input type="checkbox"  id="MY5" onclick="hm5()"><a href="#tr5"></a></td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                    <tr class="tr-none" id="tr5">
+                        <td colspan="6">
+                            <div style="display: flex;">
+                                <div style="width: calc(100% / 3);">
+                                    <p>المنطقة :  غرناطة   </p>
+                                    <p>الملكية : طابو</p>
+                                </div>
+                                <div style="width: calc(100% / 3);">
+                                    <p> المساحة 100م</p>
+                                    <p> متوفر كراج</p>
+                                </div>
+                                <div style="width: calc(100% / 3);">
+                                    <p> طابق ثاني </p>
+                                    <p> لا يوجد بلكون مفروشة </p>
+                                    <img src="images/الاشرفية.jpg" alt="" width="200px">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>6</td>
+                    <td>درعا</td>
+                    <td>شقة</td>
+                    <td> ل.س290000</td>
+                    <td><input type="checkbox" id="MY6" onclick="d6()"><a href="#tr6"></a></td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+            <tr class="tr-none" id="tr6">
+                <td colspan="6">
+                    <div style="display: flex;">
+                        <div style="width: calc(100% / 3);">
+                            <p>المنطقة :  حطين     </p>
+                            <p>الملكية : طابو</p>
+                        </div>
+                        <div style="width: calc(100% / 3);">
+                            <p> المساحة 110م</p>
+                            <p> متوفر كراج</p>
+                        </div>
+                        <div style="width: calc(100% / 3);">
+                            <p> طابق اول </p>
+                            <p> لا يوجد بلكون مفروشة </p>
+                            <img src="images/حطين.jpg" alt="" width="200px">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td>7</td>
+                    <td>نبك</td>
+                    <td>شقة</td>
+                    <td> ل.س500000</td>
+                    <td><input type="checkbox" id="MY7" onclick="n7()"><a href="#tr7"></a></td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr7">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة :  النبك </p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 150م</p>
+                                <p> متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق ارضي </p>
+                                <p>  لا يوجد بلكون مفروشة </p>
+                                <img src="images/النبك.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>يبرود</td>
+                    <td>شقة</td>
+                    <td> ل.س550000</td>
+                    <td><input type="checkbox" id="MY8" onclick="e8()"><a href="#tr8"></a></td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr8">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة :  يبرود   </p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 130م</p>
+                                <p> متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق اول </p>
+                                <p>  يوجد بلكون مفروشة </p>
+                                <img src="images/النبكض.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>حسيا</td>
+                    <td>شقة</td>
+                    <td> ل.س200000</td>
+                    <td><input type="checkbox" id="MY9" value="hide"  onclick="h9()"><a href="#tr9"></a></td>
+                    <td><input type="radio" name="radio"></td>
+                </tr>
+                <tr class="tr-none" id="tr9">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة :  حسيا     </p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 100م</p>
+                                <p> غير متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق ثالث </p>
+                                <p>  يوجد بلكون مفروشة </p>
+                                <img src="images/حسيا.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>تل</td>
+                    <td>شقة</td>
+                    <td> ل.س250000</td>
+                    <td><input type="checkbox" id="My10" value="hide"  onclick="t10()"><a href="#tr10"></a></td>
+                    <td><input type="radio" name="radio"> </td>
+                </tr>
+                <tr class="tr-none" id="tr10">
+                    <td colspan="6">
+                        <div style="display: flex;">
+                            <div style="width: calc(100% / 3);">
+                                <p>المنطقة :  التل       </p>
+                                <p>الملكية : طابو</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> المساحة 100م</p>
+                                <p>  متوفر كراج</p>
+                            </div>
+                            <div style="width: calc(100% / 3);">
+                                <p> طابق اول </p>
+                                <p>  يوجد بلكون مفروشة </p>
+                                <img src="images/تل.jpg" alt="" width="200px">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button id="MyButton">متابعة</button>
+        </div>
+    </section>
+
+
+
+    </div>
+    <!-- start contact us -->
+
+    <div class="info" id="info">
+        <div class="container">
+            <form onsubmit="return ChechFormValues(this)">
+                <table>
+                    <tr>
+                        <td class="txtleft">الاسم:</td>
+                        <td> <input type="text" placeholder="الاسم والكنية" name="name" pattern="[ا-ﻱ].{3,30}" required /></td>
+                    </tr>
+                    <tr>
+                        <td class="txtleft">الرقم الوطني:</td>
+                        <td> <input type="text" name="id" required /></td>
+                    </tr>
+                    <tr>
+                        <td class="txtleft">تاريخ الميلاد</td>
+                        <td> <input type="date" name="birth" required /></td>
+                    </tr>
+                    <tr>
+                        <td class="txtleft">رقم الموبايل:</td>
+                        <td> <input type="text" name="phone" placeholder="09xxxxxxxx" required /></td>
+                    </tr>
+                    <tr>
+                        <td class="txtleft" dir="ltr">البريد الالكتروني:</td>
+                        <td> <input type="text" name="mail" placeholder="example@mail.com" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td class="txtleft">
+                            <svg width="120" height="50">
+                                <filter id="BlurFilter">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+                                </filter>
+                                <rect width="120" height="50" fill="#afcfe2" />
+                                <text id="captcha" filter="url(#BlurFilter)" fill="#174e6e" stroke="black" font-size="30" font-family="Ink Free" x="100" y="35"></text>
+                            </svg>
+                        </td>
+                        <td>
+                            <input id="cpatchaTextBox" type="text" placeholder="ادخل رمز التحقق" size="14" autocomplete="off" required />
+                            <input type="button" id="recaptchBtn" value="تغيير الرمز" onclick="createCaptcha()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="reset" class="btnstyle" value="مسح المحتويات" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="btnstyle" id="sub" value="ارسال" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+        </table>
+    </form>
+ 
+        </div>
+    </div>
+
+    <!-- end contact us -->
+
+    <!-- start footer -->
+
+    <div class="footer">
+        <div class="container">
+            <span>جميع الحقوق محفوظة لدى شركة &copy; حدود جديدة للعيش</span>
+        </div>
+    </div>
+
+    <!-- end footer -->
+    <script type="text/javascript" src="js\myFunction.js" ></script>
+</body>
+
+</html>
